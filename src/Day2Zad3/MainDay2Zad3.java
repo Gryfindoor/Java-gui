@@ -63,7 +63,9 @@ class Kolo extends Figura {
         boolean heler = false;
         String isEqueal = "";
 
-
+//        System.out.println(x);
+        // x - do kola; this.x do punktu
+//        System.out.println(x-promien <= this.x);
         if(x-promien <= this.x && y-promien <= this.y){
             heler = true;
         }
@@ -109,7 +111,7 @@ class Prostokat extends Figura{
     {
         boolean heler = false;
         String isEqueal = "";
-
+        // x - do prostok; this.x do punktu
         if((this.x <= x && x <= this.x+szer) && (this.y >= y && this.y-wys <= y)){
             heler = true;
         }

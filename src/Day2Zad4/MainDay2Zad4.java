@@ -25,7 +25,7 @@ public class MainDay2Zad4 {
         Figura p2 = new Prostokat2(20, 20, 10, 5, '*');
         ((Prostokat2)p2).rysuj();
 
-        Kolo2 k2 = new Kolo2(15, 20, 5);
+        Kolo2 k2 = new Kolo2(15, 20, 10);
 
         k2.przesunDo(50, 40);    // przesunięcie środka koła do punktu (50, 40)
         System.out.println(k2);
