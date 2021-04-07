@@ -79,22 +79,26 @@ abstract class Figura implements Obliczenie,Comparable<Figura> {
         } else {
             if (this.pole() > f.pole()) {
                 return 1;
-            }else if(this.pole() == f.pole()){
-                if(this.obwód() > f.obwód()){
+
+            }else if(this.pole() == f.pole()) {
+                if (this.obwód() > f.obwód()) {
                     return 1;
-                }else {
-                   return -1;
+                } else if (this.obwód() < f.obwód()) {
+                    return -1;
+                } else {
+                    if (this.getId() > f.getId()) {
+                        return -1;
+                    } else {
+                        return 1;
+                    }
                 }
-            }
-            if(this.getId() > f.getId()){
-                return 1;
-            }
-            return -1;
-        }
 
+            }
     }
-
+        return -1;
+    }
 }
+
 
     class Kolo extends Figura implements Obliczenie {
 

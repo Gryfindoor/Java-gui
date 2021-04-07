@@ -61,11 +61,12 @@ abstract class Spiewak{
 
         for(int x = 0; x < sp.length; x++) {
             String song = sp[x].spiewaj();
-            ArrayList<Character> unique = new ArrayList<Character>();
+            ArrayList unique = new ArrayList();
 
             for (int i = 0; i < song.length(); i++)
-                if (!unique.contains(song.charAt(i)))
-                    unique.add(song.charAt(i));
+                if(Character.isLetter(song.charAt(i)))
+                    if (!unique.contains(song.charAt(i)))
+                        unique.add(song.charAt(i));
             System.out.println(unique.size());
 
             if(sizeSong < unique.size()){
