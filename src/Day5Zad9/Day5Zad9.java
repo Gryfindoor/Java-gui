@@ -27,7 +27,7 @@ public class Day5Zad9 {
 class Player extends Thread {
 
     public String name;
-    public int score = 1;
+    public int score = 0;
 
 
     public Player(String name) {
